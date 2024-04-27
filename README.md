@@ -4,7 +4,11 @@ Welcome to the Financial Industry Ontologies Repository. This repository houses 
 
 ## Overview
 
-Our ontologies are crafted to support data scientists, and AI developers who are looking to harness structured knowledge for private, non-commercial applications. The models provided here represent a broad spectrum of financial concepts, relationships, and terms that are crucial for a deeper understanding and operation within the financial domain.
+Our ontologies are crafted to support data scientists, and AI developers who are looking to harness structured knowledge. The models provided here represent a broad spectrum of financial concepts, relationships, and terms that are crucial for a deeper understanding and operation within the financial domain.
+
+##  License
+This repository is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
+Consult the LICENSE file for details.
 
 ## Repository Structure
 
