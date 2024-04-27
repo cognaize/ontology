@@ -76,44 +76,6 @@
     <rdfs:Datatype rdf:about="https://www.cognaize.com/ontologies/Base/Datatypes/Text">
         <rdfs:label>Dataypes/Text</rdfs:label>
     </rdfs:Datatype>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://www.cognaize.com/ontologies/Base/DataProperties/NamedEntity/hasName -->
-
-    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/Base/DataProperties/NamedEntity/hasName">
-        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/Base/NamedEntity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>NamedEntity/hasName</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://www.cognaize.com/ontologies/Base/NamedEntity -->
-
-    <owl:Class rdf:about="https://www.cognaize.com/ontologies/Base/NamedEntity"/>
 </rdf:RDF>
 
 
