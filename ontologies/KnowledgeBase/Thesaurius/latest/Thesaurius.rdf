@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius#"
+     xml:base="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius">
+        <owl:versionIRI rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/1.0"/>
+        <owl:imports rdf:resource="https://www.cognaize.com/ontologies/Base/1.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasBroaderTerm -->
+
+    <owl:ObjectProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasBroaderTerm">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:label>Term/hasBroaderTerm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasNarrowerTerm -->
+
+    <owl:ObjectProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasNarrowerTerm">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:label>Term/hasNarrowerTerm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasNonPreferredTerm -->
+
+    <owl:ObjectProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasNonPreferredTerm">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:label>Term/hasNonPreferredTerm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasQualifier -->
+
+    <owl:ObjectProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasQualifier">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Qualifier"/>
+        <rdfs:label>Term/hasQualifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasRelatedTerm -->
+
+    <owl:ObjectProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/ObjectProperties/Term/hasRelatedTerm">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:label>Term/hasRelatedTerm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/isPreferredTerm -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/isPreferredTerm">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>Term/isPreferredTerm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Qualifier/hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Qualifier/hasDescription">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Qualifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Text"/>
+        <rdfs:label>Qualifier/hasDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Qualifier/hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Qualifier/hasName">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Qualifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Text"/>
+        <rdfs:label>Qualifier/hasName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Term/hasDefinition -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Term/hasDefinition">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Text"/>
+        <rdfs:label>Term/hasDefinition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Term/hasScopeNote -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Term/hasScopeNote">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Text"/>
+        <rdfs:label>Term/hasScopeNote</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Term/hasSeeAlso -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/DataProperties/Term/hasSeeAlso">
+        <rdfs:domain rdf:resource="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Text"/>
+        <rdfs:label>Term/hasSeeAlso</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Qualifier -->
+
+    <owl:Class rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Qualifier"/>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term -->
+
+    <owl:Class rdf:about="https://www.cognaize.com/ontologies/KonwledgeBase/Thesaurius/Term"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
