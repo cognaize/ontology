@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cognaize.com/ontologies/Financials/BalanceSheet/"
+     xml:base="http://www.cognaize.com/ontologies/Financials/BalanceSheet/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AnnotationProperties="http://www.cognaize.com/ontologies/Financials/BalanceSheet/AnnotationProperties/"
+     xmlns:AnnotationProperties1="https://www.cognaize.com/ontologies/Base/AnnotationProperties/">
+    <owl:Ontology rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet">
+        <owl:versionIRI rdf:resource="urn:absolute:1.0"/>
+        <owl:imports rdf:resource="https://www.cognaize.com/ontologies/Base/1.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/AnnotationProperties/order -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/AnnotationProperties/order"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/Base/Datatypes/Formula -->
+
+    <rdfs:Datatype rdf:about="https://www.cognaize.com/ontologies/Base/Datatypes/Formula"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/hasCalculation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/hasCalculation">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Numeric"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/DataProperties/hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/DataProperties/hasDate">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/BalanceSheet/PeriodEndingOn"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/DataProperties/hasNumeric -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/DataProperties/hasNumeric">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Numeric"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/PeriodEndingOn -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/PeriodEndingOn"/>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets">
+        <AnnotationProperties:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</AnnotationProperties:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets/TotalCurrentAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets/TotalCurrentAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/BalanceSheet/TotalAssets"/>
+        <AnnotationProperties:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</AnnotationProperties:order>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
