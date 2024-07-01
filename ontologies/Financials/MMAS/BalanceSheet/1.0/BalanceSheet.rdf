@@ -1,0 +1,1653 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/"
+     xml:base="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AnnotationProperties="http://www.cognaize.com/ontologies/Financials/BalanceSheet/AnnotationProperties/"
+     xmlns:AnnotationProperties1="https://www.cognaize.com/ontologies/Base/AnnotationProperties/"
+     xmlns:AnnotationProperties2="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/AnnotationProperties/">
+    <owl:Ontology rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet">
+        <owl:versionIRI rdf:resource="urn:absolute:1.0"/>
+        <owl:imports rdf:resource="https://www.cognaize.com/ontologies/Base/1.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/AnnotationProperties/order -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/AnnotationProperties/order"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/Base/Datatypes/Formula -->
+
+    <rdfs:Datatype rdf:about="https://www.cognaize.com/ontologies/Base/Datatypes/Formula"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/hasCalculation -->
+
+    <owl:ObjectProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/hasCalculation">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Numeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasDate">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/PeriodEndingOn"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasNumeric -->
+
+    <owl:ObjectProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasNumeric">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <rdfs:range rdf:resource="https://www.cognaize.com/ontologies/Base/Datatypes/Numeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/hasCalculation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/hasCalculation">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RetainedEarnings"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasDate">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/PeriodEndingOn"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasNumeric -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/DataProperties/hasNumeric">
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecOther"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Cash"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/CostsInExcessOfBillings"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DefIncTaxRecoverCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DerivativeAssetsCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DueFromRelatedCoCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/FootnoteCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/IncomeTaxReceivable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/LIFOReserve"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/LoanstoRelatedCoCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/MarketableSecurities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Memo0DecimalsCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Memo2DecimalsCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/NonOpCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/OffBalSheetCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/OperatingCurrentAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/PrepaidsDeferredsCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TimeDeposits"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade/BadDebtReserve"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade/TotalAcctsRecNet"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/FinishedGoods"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/OtherInventory"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/RawMaterials"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/Supplies"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/WorkInProcess"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/AcctsNotesRecLongTerm"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/AcctsNotesRecOffcrStkh"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/CashValueLifeInsurance"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/DefIncTaxRecoverLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/DerivativeAssetsLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/FootnoteNonCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/InvestmentInSubsidiaries"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/LoansToRelatedCoLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/Memo0DecimalsNonCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/Memo2DecimalsNonCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/NonOpNonCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OffBalSheetNonCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OperatingNonCurAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OtherInvestments"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/PrepaidsDeferredsLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/RestrictedCash"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/AccumDeprecAndImpairment"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/BuildingsAndImprovements"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/ConstructionInProgress"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/FinanceLeases"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/FurnitureAndFixtures"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/Land"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/LeaseholdImprovements"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/MachineryAndEquipment"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/OperatingLeases"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/TransportationEquipment"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/AccumAmortAndImpairment"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/IntangiblesGoodwill"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/IntangiblesOther"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AccountsPayOther"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AccountsPayableTrade"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AcrdPostRetrmtBenftsCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/BillingsInExcessOfCosts"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPFinanceLeaseObligations"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDBank"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDOtherSecured"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDOtherUnsecured"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPOperatingLeaseObligations"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPSubordinatedDebt"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DeferredFedIncTaxCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DerivativeLiabilitiesCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DueToRelatedCoCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/FootnoteCurrentLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/GovtRemittancePayableCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/IncomeTaxesPayable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/LoansFromRelatedCoCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/Memo0DecimalsCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/Memo2DecimalsCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/NonOpCurrentLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OffBalSheetCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OperatingCurrentLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OverdraftsBook"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OverdraftsFinancing"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/STLoansPayableBank"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/STLoansPayableOther"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/ShareOptionCostsCP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/BonusesPayable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/DividendsPayable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/InterestPayable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/OtherAccruals"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/OtherTaxesPayable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/PSPlanContribution"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/WagesSalariesPayable"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/AcrdPostRtrmtBenftsLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredDebt"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredFederalIncTaxLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredInterest"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredRevenue"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DerivativeLiabilitiesLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FinanceLeaseObligations"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FootnoteNonCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FootnoteOtherLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/GovtRemittancePayableLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LoansFromOfficersStkhldrs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LoansFromRelatedCoLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtBank"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtOtherSec"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtOtherUnsec"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo0DecimalsNonCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo0DecimalsOtherLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo2DecimalsNonCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo2DecimalsOtherLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/MinorityInterestLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/NonOpNonCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OffBalSheetNonCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OperatingLeaseObligations"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OperatingNonCurLiabs"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OtherLiabilitiesGrayArea"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/ShareOptionCostsLTP"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordDeferredDebtLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordDeferredIntLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordinatedDebtLiab"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/AccumulatedOCI"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CapitalAndRestrictedReserves"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CommonStock"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CurrencyTranslation"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/HedgingReserves"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/MinorityInterestEquity"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/OtherEquityGrayArea"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/OtherReserves"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/PaidInCapital"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/PreferredStock"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RetainedEarnings"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RevaluationReserves"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordDeferredDebtEquity"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordDeferredIntEquity"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordinatedDebtEquity"/>
+        <rdfs:domain rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/TreasuryStock"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/PeriodEndingOn -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/PeriodEndingOn">
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets">
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth">
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecOther -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecOther">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Cash -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Cash">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/CostsInExcessOfBillings -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/CostsInExcessOfBillings">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DefIncTaxRecoverCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DefIncTaxRecoverCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DerivativeAssetsCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DerivativeAssetsCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DueFromRelatedCoCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/DueFromRelatedCoCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/FootnoteCurrentAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/FootnoteCurrentAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/IncomeTaxReceivable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/IncomeTaxReceivable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/LIFOReserve -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/LIFOReserve">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/LoanstoRelatedCoCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/LoanstoRelatedCoCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/MarketableSecurities -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/MarketableSecurities">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Memo0DecimalsCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Memo0DecimalsCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Memo2DecimalsCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/Memo2DecimalsCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/NonOpCurrentAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/NonOpCurrentAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/OffBalSheetCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/OffBalSheetCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/OperatingCurrentAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/OperatingCurrentAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/PrepaidsDeferredsCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/PrepaidsDeferredsCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TimeDeposits -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TimeDeposits">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade/BadDebtReserve -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade/BadDebtReserve">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade/TotalAcctsRecNet -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade/TotalAcctsRecNet">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/AcctsNotesRecTrade"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/FinishedGoods -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/FinishedGoods">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/OtherInventory -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/OtherInventory">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/RawMaterials -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/RawMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/Supplies -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/Supplies">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/WorkInProcess -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory/WorkInProcess">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalCurrentAssets/TotalInventory"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/AcctsNotesRecLongTerm -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/AcctsNotesRecLongTerm">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/AcctsNotesRecOffcrStkh -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/AcctsNotesRecOffcrStkh">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/CashValueLifeInsurance -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/CashValueLifeInsurance">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/DefIncTaxRecoverLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/DefIncTaxRecoverLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/DerivativeAssetsLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/DerivativeAssetsLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/FootnoteNonCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/FootnoteNonCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/InvestmentInSubsidiaries -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/InvestmentInSubsidiaries">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/LoansToRelatedCoLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/LoansToRelatedCoLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/Memo0DecimalsNonCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/Memo0DecimalsNonCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/Memo2DecimalsNonCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/Memo2DecimalsNonCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/NonOpNonCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/NonOpNonCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OffBalSheetNonCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OffBalSheetNonCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OperatingNonCurAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OperatingNonCurAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OtherInvestments -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/OtherInvestments">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/PrepaidsDeferredsLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/PrepaidsDeferredsLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/RestrictedCash -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/RestrictedCash">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/AccumDeprecAndImpairment -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/AccumDeprecAndImpairment">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/BuildingsAndImprovements -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/BuildingsAndImprovements">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/ConstructionInProgress -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/ConstructionInProgress">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/FinanceLeases -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/FinanceLeases">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/FurnitureAndFixtures -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/FurnitureAndFixtures">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/Land -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/Land">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/LeaseholdImprovements -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/LeaseholdImprovements">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/MachineryAndEquipment -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/MachineryAndEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/OperatingLeases -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/OperatingLeases">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/TransportationEquipment -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets/TransportationEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalFixedAssetsNet/GrossFixedAssets"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/AccumAmortAndImpairment -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/AccumAmortAndImpairment">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/IntangiblesGoodwill -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/IntangiblesGoodwill">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/IntangiblesOther -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles/IntangiblesOther">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalAssets/TotalNonCurrentAssets/TotalIntangiblesNet/GrossIntangibles"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AccountsPayOther -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AccountsPayOther">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AccountsPayableTrade -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AccountsPayableTrade">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AcrdPostRetrmtBenftsCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/AcrdPostRetrmtBenftsCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/BillingsInExcessOfCosts -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/BillingsInExcessOfCosts">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPFinanceLeaseObligations -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPFinanceLeaseObligations">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDBank -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDBank">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDOtherSecured -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDOtherSecured">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDOtherUnsecured -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPLTDOtherUnsecured">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPOperatingLeaseObligations -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPOperatingLeaseObligations">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPSubordinatedDebt -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/CPSubordinatedDebt">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DeferredFedIncTaxCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DeferredFedIncTaxCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DerivativeLiabilitiesCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DerivativeLiabilitiesCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DueToRelatedCoCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/DueToRelatedCoCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/FootnoteCurrentLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/FootnoteCurrentLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/GovtRemittancePayableCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/GovtRemittancePayableCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/IncomeTaxesPayable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/IncomeTaxesPayable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/LoansFromRelatedCoCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/LoansFromRelatedCoCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/Memo0DecimalsCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/Memo0DecimalsCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/Memo2DecimalsCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/Memo2DecimalsCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/NonOpCurrentLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/NonOpCurrentLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OffBalSheetCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OffBalSheetCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OperatingCurrentLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OperatingCurrentLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OverdraftsBook -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OverdraftsBook">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OverdraftsFinancing -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/OverdraftsFinancing">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/STLoansPayableBank -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/STLoansPayableBank">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/STLoansPayableOther -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/STLoansPayableOther">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/ShareOptionCostsCP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/ShareOptionCostsCP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/BonusesPayable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/BonusesPayable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/DividendsPayable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/DividendsPayable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/InterestPayable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/InterestPayable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/OtherAccruals -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/OtherAccruals">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/OtherTaxesPayable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/OtherTaxesPayable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/PSPlanContribution -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/PSPlanContribution">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/WagesSalariesPayable -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities/WagesSalariesPayable">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalCurrentLiabilities/TotalAccruedLiabilities"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/AcrdPostRtrmtBenftsLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/AcrdPostRtrmtBenftsLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredDebt -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredDebt">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredFederalIncTaxLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredFederalIncTaxLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredInterest -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredInterest">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredRevenue -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DeferredRevenue">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DerivativeLiabilitiesLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/DerivativeLiabilitiesLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FinanceLeaseObligations -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FinanceLeaseObligations">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FootnoteNonCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FootnoteNonCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FootnoteOtherLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/FootnoteOtherLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/GovtRemittancePayableLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/GovtRemittancePayableLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LoansFromOfficersStkhldrs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LoansFromOfficersStkhldrs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LoansFromRelatedCoLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LoansFromRelatedCoLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtBank -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtBank">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtOtherSec -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtOtherSec">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtOtherUnsec -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/LongTermDebtOtherUnsec">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo0DecimalsNonCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo0DecimalsNonCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo0DecimalsOtherLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo0DecimalsOtherLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo2DecimalsNonCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo2DecimalsNonCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo2DecimalsOtherLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/Memo2DecimalsOtherLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/MinorityInterestLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/MinorityInterestLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/NonOpNonCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/NonOpNonCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OffBalSheetNonCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OffBalSheetNonCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OperatingLeaseObligations -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OperatingLeaseObligations">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OperatingNonCurLiabs -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OperatingNonCurLiabs">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OtherLiabilitiesGrayArea -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/OtherLiabilitiesGrayArea">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/ShareOptionCostsLTP -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/ShareOptionCostsLTP">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordDeferredDebtLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordDeferredDebtLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordDeferredIntLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordDeferredIntLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordinatedDebtLiab -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs/SubordinatedDebtLiab">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalLiabilities/TotalNonCurrentLiabs"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/AccumulatedOCI -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/AccumulatedOCI">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CapitalAndRestrictedReserves -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CapitalAndRestrictedReserves">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CommonStock -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CommonStock">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CurrencyTranslation -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/CurrencyTranslation">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/HedgingReserves -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/HedgingReserves">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/MinorityInterestEquity -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/MinorityInterestEquity">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/OtherEquityGrayArea -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/OtherEquityGrayArea">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/OtherReserves -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/OtherReserves">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/PaidInCapital -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/PaidInCapital">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/PreferredStock -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/PreferredStock">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RetainedEarnings -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RetainedEarnings">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RevaluationReserves -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/RevaluationReserves">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordDeferredDebtEquity -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordDeferredDebtEquity">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordDeferredIntEquity -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordDeferredIntEquity">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordinatedDebtEquity -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/SubordinatedDebtEquity">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/TreasuryStock -->
+
+    <owl:Class rdf:about="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth/TreasuryStock">
+        <rdfs:subClassOf rdf:resource="http://www.cognaize.com/ontologies/Financials/MMAS/BalanceSheet/TotalLiabsAndNetWorth/TotalNetWorth"/>
+        <AnnotationProperties2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</AnnotationProperties2:order>
+    </owl:Class>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/Base/Datatypes/Date -->
+
+    <owl:Class rdf:about="https://www.cognaize.com/ontologies/Base/Datatypes/Date"/>
+    
+
+
+    <!-- https://www.cognaize.com/ontologies/Base/Datatypes/Numeric -->
+
+    <owl:Class rdf:about="https://www.cognaize.com/ontologies/Base/Datatypes/Numeric"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
